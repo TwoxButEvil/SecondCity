@@ -95,8 +95,8 @@
 			var/datum/storyteller_roll/metamorph/roll_datum = new()
 			if(roll_datum.st_roll(owner, bonus_added = PRIMAL_URGE_PLACEHOLDER) == ROLL_SUCCESS)
 				// First valid use of timeout discovered (we dont want to be able to hold it out)
-				var/choice = tgui_input_list(owner, "Revert to your choosen form", "Metamorph", transformation_list, get_breed_form_species(), 1 TURNS)
-				if(choice in transformation_list)
+				var/choice = tgui_input_list(owner, "Revert to your choosen form", "Metamorph", transformation_names, get_breed_form_species(), 1 TURNS)
+				if(choice in transformation_names)
 					transform_fera(choice, force = TRUE)
 					return
 

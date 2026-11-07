@@ -115,6 +115,7 @@
 	splat_priority = SPLAT_PRIO_SHIFTER
 
 	var/list/transformation_list = list()
+	var/static/list/transformation_names = list("Homid" = /datum/species/human/shifter/homid, "Feral" = /datum/species/human/shifter/feral, "War" = /datum/species/human/shifter/war, "Bestial" = /datum/species/human/shifter/bestial, "Dire" = /datum/species/human/shifter/dire)
 	/// Stats added and removed upon gaining the species of the splat. Assoc list indexed by the species ids for each form
 	var/list/transformation_stats
 	var/list/transformation_stat_clamps
